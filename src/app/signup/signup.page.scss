@@ -1,0 +1,33 @@
+ion-content {
+    --background: rgb(252, 248, 248);
+}
+
+.image img {
+    width: 20rem;
+}
+
+span {
+    color: purple;
+}
+
+.text-container h2, .text-container p {
+    color: purple;
+}
+
+.signUp-container p {
+    color: purple;
+}
+
+.input-style {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #555;
+    outline: none;
+  }
+  
+  .input-style:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }

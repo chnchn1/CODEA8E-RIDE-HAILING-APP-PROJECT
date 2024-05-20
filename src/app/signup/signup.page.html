@@ -1,0 +1,31 @@
+<ion-content [fullscreen]="true">
+
+  <div class = "image">
+    <img src="../../assets/images/vroomLogo.png">
+  </div>
+
+  <div class = "text-container">
+    <h2>Hi, Welcome!</h2>
+    <p>Sign Up and Let's get started!</p>
+  </div>
+
+  <div class = "signUp-Container">
+    <div class = "input-container">
+      <div class = "input-item">
+        <ion-input username = "test" type = "text" [(ngModel)] = "email" placeholder="Email" class = "input-style"></ion-input>
+      </div>
+      <div class = "input-item">
+        <ion-input password = "test" type = "password" [(ngModel)] = "password" placeholder="Password" class = "input-style"></ion-input>
+      </div>
+      <div class = "input-item">
+        <ion-input password = "test" type = "password" [(ngModel)] = "retypePassword" placeholder="Retype Password" class = "input-style"></ion-input>
+      </div>
+      <div class = "input-item">
+        <ion-input password = "test" type = "text" [(ngModel)] = "phoneNumber" placeholder="Mobile Number" class = "input-style"></ion-input>
+      </div>
+        <button class = "signUp-btn" (click) = "signUp()"> Sign Up </button>
+    </div>
+    <p>Already have an account? <a href="/login">Log In</a></p>
+</div>
+
+</ion-content>

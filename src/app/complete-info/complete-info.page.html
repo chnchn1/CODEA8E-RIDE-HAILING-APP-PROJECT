@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>COMPLETE RIDE INFORMATION</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="text-container">
+    CAR
+  </div>
+  <ion-item>
+    <ion-select placeholder="Select Car" [(ngModel)]="car.type">
+      <ion-select-option *ngFor="let car of carType" [value]="car">{{ car }}</ion-select-option>
+    </ion-select>
+  </ion-item>
+  
+</ion-content>

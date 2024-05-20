@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>PREBOOK</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-content>
+    <ion-item>
+      <ion-label position="floating">Time and Date</ion-label>
+      <ion-datetime display-format="h:mm A MMM DD" [(ngModel)]="selectedDateTime"></ion-datetime>
+    </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Driver</ion-label>
+    <ion-select (ionChange)="availableDriver($event.detail.value)">
+      <ion-select-option *ngFor="let driver of drivers" [value]="driver">{{ driver.name }}</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+
+  <div class="confirm-btn">
+    <ion-button color="success" (click)="confirm()">CONFIRM</ion-button>
+  </div>
+
+</ion-content>

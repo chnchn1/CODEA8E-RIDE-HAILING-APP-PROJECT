@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/car"></ion-back-button>
+    </ion-buttons>
+    <ion-title>PICK-UP LOCATION</ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-searchbar 
+      animated="true" 
+      debounce="800" 
+      placeholder="Search your Pick-Up Location" 
+      (ionInput)="search()"
+      [(ngModel)]="query">
+    </ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngIf="places?.length > 0">
+    <ion-item *ngFor="let place of places" tappable (click)="choosePlace(place)">
+      <ion-icon name="location-outline" slot="start"></ion-icon>
+      <ion-label>
+        <h2>{{ place.title }}</h2>
+        <p>{{ place.address }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <div class = confirm-btn>
+    <ion-button color="success" (click)="confirm()">CONFIRM</ion-button>
+  </div> 
+</ion-content>
+ 
+

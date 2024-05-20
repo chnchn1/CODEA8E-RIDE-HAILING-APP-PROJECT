@@ -1,11 +1,11 @@
 export const environment = {
   production: true,
-  firebaseConfig: {
-    apiKey: "AIzaSyBPZFRe8We5uF7pTi4DtdhRk9W4oxkSPjM",
-    authDomain: "vroom-project-d8260.firebaseapp.com",
-    projectId: "vroom-project-d8260",
-    storageBucket: "vroom-project-d8260.appspot.com",
-    messagingSenderId: "264497125922",
-    appId: "1:264497125922:web:1b631f2d897a536219887b"
+  firebaseConfig :{
+    apiKey: "AIzaSyBpAklDzQFQa9U9c85wVAU8Zj6X0qxaYKg",
+    authDomain: "project-30c92.firebaseapp.com",
+    projectId: "project-30c92",
+    storageBucket: "project-30c92.appspot.com",
+    messagingSenderId: "324575202356",
+    appId: "1:324575202356:web:d38b67347b07f533e80e61"
   }
 };

@@ -76,7 +76,8 @@ const routes: Routes = [
   {
     path: 'drivers-info',
     loadChildren: () => import('./drivers-info/drivers-info.module').then( m => m.DriversInfoPageModule)
-  }
+  },
+
 ];
 
 @NgModule({

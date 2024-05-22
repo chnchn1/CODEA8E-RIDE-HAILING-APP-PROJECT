@@ -19,6 +19,10 @@ export class HomePage {
   prebook () {
     this.router.navigate(['prebook']);
   }
+
+  message () {
+    this.router.navigate(['message']);
+  }
   
   signOut() {
     this.router.navigate(['login']);

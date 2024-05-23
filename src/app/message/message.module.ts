@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { MessagePageRoutingModule } from './message-routing.module';
 
 import { MessagePage } from './message.page';
+import { UserListComponent } from '../components/user-list/user-list.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,6 @@ import { MessagePage } from './message.page';
     IonicModule,
     MessagePageRoutingModule
   ],
-  declarations: [MessagePage]
+  declarations: [MessagePage, UserListComponent]
 })
 export class MessagePageModule {}

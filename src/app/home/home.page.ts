@@ -11,17 +11,13 @@ export class HomePage {
 
   constructor(private router: Router, private authService: AuthenticateService) {}
 
-
+  
   book () {
     this.router.navigate(['car']);
   }
 
   prebook () {
     this.router.navigate(['prebook']);
-  }
-
-  message () {
-    this.router.navigate(['message']);
   }
   
   signOut() {

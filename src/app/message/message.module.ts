@@ -16,6 +16,6 @@ import { UserListComponent } from '../components/user-list/user-list.component';
     IonicModule,
     MessagePageRoutingModule
   ],
-  declarations: [MessagePage, UserListComponent]
+  declarations: [MessagePage, ]
 })
 export class MessagePageModule {}

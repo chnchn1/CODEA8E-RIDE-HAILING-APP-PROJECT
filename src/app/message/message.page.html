@@ -43,7 +43,7 @@
       </ion-header>
       <ion-content *ngIf="users as user$">
         <ion-list class="ion-margin-top" [style.background]="'tranparent'" lines="none">
-          <app-user-list *ngFor="let item of user$" [item]="item" (onClick)="startChat($event)"></app-user-list>
+          <!-- <app-user-list *ngFor="let item of user$" [item]="item" (onClick)="startChat($event)"></app-user-list> -->
         </ion-list>
       </ion-content>
     </ng-template>

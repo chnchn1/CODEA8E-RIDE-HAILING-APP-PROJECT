@@ -41,7 +41,7 @@
           </ion-buttons>
         </ion-toolbar>
       </ion-header>
-      <ion-content *ngIf="users as user$">
+      <ion-content *ngIf="(users | async) as user$">
         <ion-list class="ion-margin-top" [style.background]="'tranparent'" lines="none">
           <!-- <app-user-list *ngFor="let item of user$" [item]="item" (onClick)="startChat($event)"></app-user-list> -->
         </ion-list>
